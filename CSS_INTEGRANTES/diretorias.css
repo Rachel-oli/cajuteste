@@ -1,0 +1,382 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Peace_Sans_Webfont;
+        src: local(Peace_Sans_Webfont), url(../font/Peace_Sans_Webfont.ttf);
+    }
+
+@font-face {
+    font-family: GlacialIndifference-Regular;
+    src: local(GlacialIndifference-Regular), url(../font/GlacialIndifference-Regular.otf);
+}
+
+body {
+    font-family: GlacialIndifference-Regular;
+    background-image: url(../IMG/fundo-azul-invert.jpg);
+    color: rgb(39, 39, 39);
+}
+
+::selection {
+    background-color: #88a09e;
+    color: white;
+}
+
+header {
+    display: grid;
+    min-height: 100vh;
+}
+
+.virgula-menu {
+    height: 55px;
+}
+
+.menu figure {
+    display: grid;
+    grid-template-columns:70px 250px;
+    align-items: center;
+    color: #7D3B69;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    margin-left: 9%;
+}
+
+.menu figure {
+    font-size: 1.1em;
+}
+
+.menu {
+    display: flex;
+    font-family: GlacialIndifference-Regular;
+    width: 100vw;
+    background-color: rgb(140, 170, 168);
+    height: 75px;
+    position: fixed;
+    z-index: 1;
+}
+
+.menu ul {
+    display: grid;
+    width: 100vw;
+    justify-content: flex-end;
+    grid-template-columns: 100px 50px 50px 50px;
+    margin-right: 10%;
+    align-items: center;
+}
+
+.home a {
+    display: block;
+    font-weight: bold;
+    font-size: 14.5px;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    text-shadow: rgb(100, 117, 116) 1px 1px 3px;
+    text-decoration: none;
+    transition: all 0.5s;
+    font-weight: bold;
+}
+
+.home a:hover {
+    transform: translate3d(1px, 1px, -1px);
+    text-shadow: none;
+}
+
+.icons a {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.8em;
+    color: #7D3B69;
+}
+
+.icons a:hover {
+    color: #683157;
+}
+
+.menu li {
+    list-style: none;
+    margin: 2px;
+}
+
+.simbol {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    font-family: Peace_Sans_Webfont;
+    font-size: 3.2em;
+    color: #7D3B69;
+    text-shadow: white 1.5px 1.5px;
+    text-transform: uppercase;
+    align-self: center;
+}
+
+.diretoria {
+    background-color: white;
+    padding-bottom: 100px; 
+}
+
+.diretoria-image {
+    height: 500px;
+}
+
+main {
+    background: white;
+}
+
+.slide-card {
+    display: grid;
+    grid-template-columns: 360px 360px 360px;
+    grid-template-rows: 450px 450px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 360px;
+    height: 400px;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+}
+
+.title {
+    text-align: center;
+}
+
+.card h2 {
+    display: inline-block;
+    color:#7D3B69;
+    margin: 0.5em 0 0.5em 0;
+    font-size: 1.25em;
+}
+
+.card-back {
+    height: 350px;
+    width: 350px;
+    color: white;
+    background-color:#7D3B69;
+    padding: 5%;
+    backface-visibility: hidden;
+}
+
+.card-front img {
+    height: 350px; 
+    text-align: left;
+    box-shadow: #d3d2d2 0 0 2px;
+    position: absolute;
+    opacity: 1;
+    visibility: visible;
+    transition: 1s;
+}
+
+.card-back h4 {
+    text-indent: 3em;
+}
+
+.card:hover img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+footer {
+    margin-top: 1px;
+    display: inline-block;
+    background-color:#7D3B69;
+    color: white;
+    text-align: center;
+    width: 100%;
+}
+
+.virgula-end {
+    height: 130px;
+}
+
+.ufpe {
+    height: 130px;
+    border-radius: 100%;
+    box-shadow: 5px 5px 10px;
+    color: rgba(0, 0, 0, 0.336);
+}
+
+.fale-icon {
+    height: 100px;
+}
+
+.fale-conosco figcaption {
+    margin-top: 13px;
+    color: white;
+}
+
+.fejepe {
+    height: 80px;
+}
+
+.apoio {
+    margin: 20px;
+}
+
+.end-page,
+.fale,
+.apoio,
+.junte {
+    display: inline-block;
+    width: 23%;
+    padding-top: 50px;
+    vertical-align: middle;
+}
+
+.junte {
+    text-align: start;
+    background-color: #7D3B69;
+    color: white;
+}
+
+.junte a {
+    color: white;
+    text-decoration: none;
+    background-image: linear-gradient(#FFD80C, #FFD80C);
+    background-repeat: no-repeat;
+    background-position: 0% 100%;
+    background-size: 100% 2.5px;
+    transition: ease 0.7s;
+}
+
+.junte a:hover {
+    color: white;
+    text-decoration: none;
+    background-size: 0% 2.5px;
+}
+
+.credits {
+    font-size: 0.8em;
+    background-color: #7D3B69;
+    color: white;
+    padding: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.credits a {
+    color: white;
+}
+
+.credits a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+@media (max-width: 414.99999px) {
+    .header {
+        height: 100vh;
+    }
+    .simbol {
+        position: relative;
+        top: -30%;
+    }
+    .diretoria-image {
+        justify-content: center;
+        height: 280px;
+    }
+    .diretoria {
+        display: block;
+    }
+    .menu figure {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .menu ul {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .menu .home {
+        font-size: 13px;
+        color: white; 
+        padding:5px;
+    }
+    .menu .icons {
+        font-size: 16px;
+    }
+    .menu li {
+        margin: 3px;
+    }
+    .simbol figcaption {
+        font-size: 0.85em;
+    } 
+    .end-page,
+    .fale,
+    .apoio,
+    .junte {
+        width: 80%;
+        vertical-align: middle;
+    }
+}
+
+@media (max-width: 360px) {
+    .header {
+        height: 100vh;
+    }
+    .simbol {
+        position: relative;
+        top: -10%;
+    }
+    .diretoria-image {
+        justify-content: center;
+        height: 280px;
+    }
+    .diretoria {
+        display: block;
+    }
+    .menu figure {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 20px;
+        font-size: 1em;
+    }
+    .menu {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .menu ul {
+        text-align: center;
+        justify-content: center;
+        margin-right: 0;
+    }
+    .menu .home {
+        font-size: 13px;
+        color: white; 
+        padding:5px;
+    }
+    .menu .icons {
+        font-size: 16px;
+    }
+    .menu li {
+        margin: 3px;
+    }
+    .simbol figcaption {
+        font-size: 0.85em;
+    } 
+
+    .end-page,
+    .fale,
+    .apoio,
+    .junte {
+        width: 80%;
+        vertical-align: middle;
+    }
+}
